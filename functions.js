@@ -7,7 +7,10 @@ function validForm(e){
     validMensaje();
 
     if(document.getElementById("errorEmail").hidden && document.getElementById("errorEmailInvalid").hidden && document.getElementById("errorAsunto").hidden && document.getElementById("errorMensaje").hidden){
-        alert("todo valido");
+        alert("todo valido, listo para enviar el mail");
+        document.getElementById("email").value = "";
+        document.getElementById("asunto").value = "";
+        document.getElementById("mensaje").value = "";
     }
 }
 

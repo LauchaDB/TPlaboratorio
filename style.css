@@ -187,7 +187,7 @@ body{
   margin: 2%;
 }
 
-.contenidoMutual, .contenidoNoticias{
+.contenidoMutual, .contenidoNoticias, .contenidoContacto{
   background-color: rgb(255, 20, 20);
   display: flex;
   justify-content: center;
