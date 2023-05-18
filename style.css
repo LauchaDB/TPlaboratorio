@@ -308,7 +308,8 @@ body{
   color: rgb(237,237,237);
   font-size: 120%;
 }
-@media (max-width: 868px) { /* Ajusta el valor según tus necesidades */
+
+@media (max-width: 868px) { 
   .contenido {
     flex-direction: column;
   }
@@ -346,5 +347,9 @@ body{
   .ubicacionClub {
     flex-direction: column-reverse;
     margin: 12%;
+  }
+
+  .nameClub p{
+    font-size: 150%;
   }
 }
