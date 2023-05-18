@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asociarse</title>
+    <title>Asociarse - CAJU</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="shortcut icon" href="/images/logoCAJU.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -12,6 +12,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
   </head>
 <body>
    <!-- Navbar inicio -->
@@ -53,11 +54,11 @@
       </div>
     </div>
   </nav>
-<!-- Navbar fin -->
+  <!-- Navbar fin -->
 
   <h1 class="titleAsociarse animate__animated animate__backInLeft">Asociarse</h1>
 
-  <section class="contenidoMutual">
+  <section class="contenidoAsociarse">
       <p class="textInfo">¡Descubre los increíbles privilegios de ser socio del club! Disfruta de una 
         amplia gama de beneficios exclusivos, como acceso garantizado a emocionantes partidos.
          Además, obtén fabulosos descuentos en emocionantes rifas y sorteos que se 
@@ -65,7 +66,7 @@
          en viajes, turismo, préstamos y una amplia variedad de servicios que nuestra mutual tiene para ofrecerte.
           ¡No pierdas la oportunidad de aprovechar estas increíbles ventajas y únete a nosotros hoy mismo!</p>  
   </section>
-
+  
   <section class="sendEmail">
 
     <h2>¡Contáctanos por email y comienza el proceso ahora mismo!</h2>
@@ -73,27 +74,74 @@
     <form class="formulario">
 
       <div class="mb-3">
-        <label for="email" class="form-label">Email: </label>
-        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" onblur="validEmail()">
-        <label class="errorForm" id="errorEmail" hidden>El email no puede ser vacio</label>
-        <label class="errorForm" id="errorEmailInvalid" hidden>El email no es valido</label>
+        <label for="name" class="form-label">Nombre y apellido* </label>
+        <input type="text" class="form-control" id="name" onblur="validName()">
+        <label class="errorForm" id="errorName" hidden>El nombre no puede ser vacio</label>
       </div>
-  
+
       <div class="mb-3">
-        <label for="asunto" class="form-label">Asunto: </label>
-        <input type="text" id="asunto" class="form-control" id="asunto" onblur="validAsunto()">
-        <label class="errorForm" id="errorAsunto" hidden>El asunto no puede ser vacio</label>
+          <label for="direccion" class="form-label">Direccion* </label>
+          <input type="text" class="form-control" id="direccion" onblur="validDireccion()">
+          <label class="errorForm" id="errorDireccion" hidden>La direccion no puede ser vacio</label>
       </div>
-  
+
       <div class="mb-3">
-        <label for="mensaje" class="form-label">Mensaje: </label>
+          <label for="telefono" class="form-label">Telefono* </label>
+          <input type="tel" class="form-control" id="telefono" onblur="validTelefono()">
+          <label class="errorForm" id="errorTelefono" hidden>El telefono no puede ser vacio</label>
+      </div>
+
+      <div class="mb-3">
+          <label for="dni" class="form-label">DNI* </label>
+          <input type="number" class="form-control" id="dni" onblur="validDni()">
+          <label class="errorForm" id="errorDni" hidden>El DNI no puede ser vacio</label>
+          <label class="errorForm" id="errorDniInvalid" hidden>El DNI no es valido debe tener 8 numeros</label>
+      </div>
+
+      <div class="mb-3">
+          <label for="email" class="form-label">Email* </label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" onblur="validEmail()">
+          <label class="errorForm" id="errorEmail" hidden>El email no puede ser vacio</label>
+          <label class="errorForm" id="errorEmailInvalid" hidden>El email no es valido</label>
+      </div>
+
+      <div class="mb-3">
+        <label for="nacimiento" class="form-label">Fecha nacimiento* </label>
+        <input type="date" class="form-control" id="nacimiento" onblur="validFechaNac()">
+        <label class="errorForm" id="errorFecha" hidden>La fecha de nacimiento no puede ser vacio</label>
+        <label class="errorForm" id="errorFechaInvalid" hidden>La fecha de nacimiento no es valido</label>
+      </div>
+
+      <div class="mb-3">
+        <label for="genero" class="form-label">Genero* </label>
         <div>
-          <textarea type="text" name="mensaje" id="mensaje" cols="65%" rows="5" onblur="validMensaje()"></textarea>
+          <label>
+            <input type="radio" name="genero" value="masculino" onblur="validGenero()">
+            Masculino
+          </label>
+        
+          <label>
+            <input type="radio" name="genero" value="femenino" onblur="validGenero()">
+            Femenino
+          </label>
+        
+          <label>
+            <input type="radio" name="genero" value="otro" onblur="validGenero()">
+            Otro
+          </label>
         </div>
-        <label class="errorForm" id="errorMensaje" hidden>El mensaje no puede ser vacio</label>
+        <label class="errorForm" id="errorGenero" hidden>Debe seleccionar un genero</label>
+      </div>
+
+      <div class="mb-3">
+        <label for="foto" class="form-label">Foto carnet* </label>
+        <div>
+          <input type="file" name="foto" id="foto" accept="image/*" onblur="validFoto()">
+        </div>
+        <label class="errorForm" id="errorFoto" hidden>Debe seleccionar un imagen para el carnet</label>
       </div>
   
-      <button class="btn btnSendEmail" onclick="validForm(event)">Enviar</button>
+      <button class="btn btnSendEmail" onclick="validFormAsociarse(event)">Enviar</button>
     </form>
   </section>
 
@@ -102,20 +150,20 @@
       <div class="row">
         <div class="col-lg-6">
           <h5>Contacto</h5>
-          <p>Correo: CAJU@gmail.com</p>
+          <p>Correo: juventudunida@gmail.com</p>
         </div>
         <div class="col-lg-6">
           <h5>Redes sociales</h5>
           <ul class="list-inline">
             <li class="list-inline-item">
-              <a href="#">
+              <a href="https://www.facebook.com/cajuventudunida">
                 <i class="fab fa-facebook">
                   <ion-icon name="logo-facebook"></ion-icon>
                 </i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
+              <a href="https://www.instagram.com/cajuventudunidaoficial/">
                 <i class="">
                   <ion-icon name="logo-instagram"></ion-icon>
                 </i>
@@ -131,5 +179,6 @@
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   <script src="/functions.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.js"></script>
   </body>
 </html>

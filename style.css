@@ -1,8 +1,34 @@
+/* index - home */
 body{
-    background-color: rgb(241, 241, 241);
+  background-color: rgb(241, 241, 241);
 }
 .navbar {
-    justify-content: center;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: rgb(255, 20, 20);
+}
+
+.menu a{
+  color: rgb(255, 20, 20);
+  font-weight: 700;
+}
+
+.menu .navbar-nav {
+  margin-left: auto;
+}
+
+.logoDelNav{
+  display: flex;
+}
+
+.logoDelNav p{
+  margin: auto;
+  margin-left: 10%;
 }
 
 .encabezado{
@@ -29,48 +55,9 @@ body{
   margin: 5% 15% 5% 15%;
 }
 
-
-.carrouselsImagenes{
-  border-radius: 6px;
-}
-
 .historia p{
   text-align: justify;
   font-size: large;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    color: rgb(255, 20, 20);
-}
-
-.menu a{
-    color: rgb(255, 20, 20);
-    font-weight: 700;
-}
-
-.menu .navbar-nav {
-    margin-left: auto;
-}
-
-.menu ul:hover{
-  color: aqua;
-}
-
-.logoDelNav{
-  display: flex;
-  
-}
-
-.logoDelNav p{
-  margin: auto;
-  margin-left: 10%;
-}
-
-.sectionActividades{
-    background-color: rgb(255, 20, 20);
 }
 
 .ubicacionClub{
@@ -83,40 +70,109 @@ body{
   text-align: justify;
 }
 
-.titleActividades{
-    text-align: center;
-    padding: 2%;
-    color: white;
-  }
-  
-  .card {
-    margin-bottom: 30px;
-  }
-  
-  .card-img-top {
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .card-body {
-    text-align: center;
-  }
-  
-  .card-text {
-    font-size: 16px;
-    color: #555;
-  }
+.sectionActividades{
+  background-color: rgb(255, 20, 20);
+}
 
-  .titleCardAct{
-    color: rgb(255, 20, 20);
-  }
-  
+.titleActividades{
+  text-align: center;
+  padding: 2%;
+  color: white;
+}
+
 .deportes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }  
 
+.carrouselsImagenes{
+  border-radius: 6px;
+}
+
+.titleCardAct{
+  color: rgb(255, 20, 20);
+}
+  
+.card {
+  margin-bottom: 5%;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.noticias-section h2 {
+  font-size: xx-large;
+  font-weight: bold;
+  color: #333;
+}
+
+.noticias-section p {
+  font-size: 18px;
+  color: #777;
+  margin: 2% 20% 2% 20%;
+}
+
+.noticias-section .btn {
+  background-color: rgb(255, 20, 20);
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.noticias-section .btn:hover {
+  background-color: rgb(163, 12, 12);
+}
+
+/* noticias */
+
+.contenidoNoticias{
+  margin-bottom: 3%;
+}
+
+.titleNoticias, .titleAsociarse, .titleHistoriaMutual{
+  text-align: center;
+  color: #333;
+  font-size: 3em;
+  margin: 2%;
+}
+
+.contenidoNoticias, .contenidoAsociarse, .contenidoContacto{
+  background-color: rgb(255, 20, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  text-align: center;
+}
+
+.textInfo {
+  max-width: 900px;
+  font-size: larger;
+  text-align: justify;
+  color: white;
+}
+
+.contenidoCardsNoticias{
+  justify-content: space-evenly;
+  margin: 4% 4% 4% 4%;
+}
+
+.cardNoticia{
+  width: 20%;
+  margin: 3%;
+} 
+
+.textDeLaNoticia{
+  text-align: start;
+}
+
+.linkMutual{
+  text-decoration: none;
+  color: rgb(255, 20, 20);
+}
+
+/* asociarse */
 
 .sendEmail{
   display: flex;
@@ -145,10 +201,6 @@ body{
   color: white;
 }
 
-.mb-3 {
-  margin-bottom: 15px;
-}
-
 .form-label {
   font-weight: bold;
 }
@@ -160,49 +212,11 @@ body{
   border: 1px solid #ccc;
 }
 
-.errorForm {
-  color: red;
-}
+.errorForm{
+  color: rgb(255, 78, 78);
+} 
 
-@media screen and (max-width: 600px) {
-  .formulario {
-    max-width: 100%;
-    padding: 1%;
-  }
-
-  .contenidoMutual {
-    flex-direction: column;
-  }
-
-  .ubicacionClub {
-    flex-direction: column-reverse;
-    margin: 12%;
-  }
-}
-
-.titleAsociarse, .titleNoticias, .titleHistoriaMutual{
-  text-align: center; /* Centra el texto horizontalmente */
-  color: #333; /* Cambia el color del texto a un tono gris oscuro (#333) */
-  font-size: 3em;
-  margin: 2%;
-}
-
-.contenidoMutual, .contenidoNoticias, .contenidoContacto{
-  background-color: rgb(255, 20, 20);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-  text-align: center;
-}
-
-.contenidoNoticias{
-  margin-bottom: 3%;
-}
-
-.textDeLaNoticia{
-  text-align: start;
-}
+/* mutual */
 
 .contenidoHistoriaMutualRojo{
   background-color: rgb(255, 20, 20);
@@ -214,33 +228,25 @@ body{
   flex-direction: row;
 }
 
-.contenidoTexto{
-  margin-left: 10%;
+.contenido {
+  display: flex;
+  flex-direction: row;
+  margin: 3%;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.contenidoImagen{
-  text-align: center;
+.contenido p{
+  margin: 2%;
 }
 
-.contenidoImagen img{
+.contenido img{
+  margin: 2%;
+}
+
+.imagenMutual{
   width: 40%;
-}
-
-/* Media query para dispositivos móviles */
-@media (max-width: 768px) {
-  .contenidoImagenSection {
-    flex-direction: column;
-  }
-
-  .contenidoTexto,
-  .contenidoImagen {
-    padding: 1%;
-  }
-  .contenidoImagen img {
-    max-width: 80%;
-    height: auto;
-  }
-
 }
 
 .contenidoHistoriaMutual{
@@ -256,137 +262,89 @@ body{
   color: black;
 }
 
-.textInfo {
-  max-width: 900px;
-  font-size: larger;
-  text-align: justify;
-  color: white;
-}
+/* contactarnos */
 
-.errorForm{
-  color: rgb(255, 78, 78);
-}
 
-.contenidoCardsNoticias{
-  justify-content: space-evenly;
-  margin: 4% 4% 4% 4%;
-}
 
-.cardNoticia{
-  width: 20%;
-  margin: 3%;
-}
-
+/* footer */
+  
 .footer {
-    background-color: rgba(41, 41, 41, 0.9);
-    color: rgb(237,237,237);
-    padding: 1% 0;
-    padding-bottom: 0%;
-    bottom: 0;
-    width: 100%;
-    font-size: small;
-    opacity: 80%;
-    margin-top: 1%;
-  }
-  
-  .footer .container {
-    text-align: center;
-  }
-  
-  .footer h5 {
-    color: rgb(237,237,237);
-    font-weight: bold;
-    font-size: large;
-  }
-  
-  .footer p {
-    margin-bottom: 1%;
-  }
-  
-  .footer ul.list-inline {
-    margin-top: 1%;
-    padding-left: 0;
-    list-style: none;
-  }
-  
-  .footer ul.list-inline li {
-    margin-right: 5px;
-  }
-  
-  .footer ul.list-inline li a i {
-    color: rgb(237,237,237);
-    font-size: 120%;
-  }  
+  background-color: rgba(41, 41, 41, 0.9);
+  color: rgb(237,237,237);
+  padding: 1% 0;
+  padding-bottom: 0%;
+  bottom: 0;
+  width: 100%;
+  font-size: small;
+  opacity: 80%;
+  margin-top: 1%;
+}
 
-  .noticias-section {
-    text-align: center;
-    padding: 40px;
-  }
-  
-  .noticias-section h2 {
-    font-size: 32px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .noticias-section p {
-    font-size: 18px;
-    color: #777;
-    margin: 2% 20% 2% 20%;
-  }
-  
-  .noticias-section .btn {
-    display: inline-block;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 12px 24px;
-    border-radius: 4px;
-    background-color: rgb(255, 20, 20);
-    color: #fff;
-    transition: background-color 0.3s ease;
-  }
-  
-  .noticias-section .btn:hover {
-    background-color: rgb(163, 12, 12);
-  }
-  
-  .imagenMutual{
-    width: 40%;
-  }
+.footer .container {
+  text-align: center;
+}
 
+.footer h5 {
+  color: rgb(237,237,237);
+  font-weight: bold;
+  font-size: large;
+}
+
+.footer p {
+  margin-bottom: 1%;
+}
+
+.footer ul.list-inline {
+  margin-top: 1%;
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer ul.list-inline li {
+  margin-right: 5px;
+}
+
+.footer ul.list-inline li a i {
+  color: rgb(237,237,237);
+  font-size: 120%;
+}
+@media (max-width: 868px) { /* Ajusta el valor según tus necesidades */
   .contenido {
-    display: flex;
-    flex-direction: row;
-    margin: 3%;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
   }
 
-  .contenido p{
-    margin: 2%;
+  .contenido img {
+    order: 2;
   }
-  .contenido img{
-    margin: 2%;
-  }
-  
-  @media (max-width: 868px) { /* Ajusta el valor según tus necesidades */
-    .contenido {
-      flex-direction: column;
-    }
-    
-    .contenido img {
-      order: 2;
-    }
-    
-    .contenido p {
-      order: 1;
-    }
 
-    .imagenMutual{
-      width: 80%;
-    }
+  .contenido p {
+    order: 1;
   }
-  
+
+  .imagenMutual{
+    width: 80%;
+  }
+
+  .contenidoImagenSection {
+    flex-direction: column;
+  }
+
+  .contenidoTexto,
+  .contenidoImagen {
+    padding: 1%;
+  }
+  .contenidoImagen img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .formulario {
+    max-width: 100%;
+    padding: 1%;
+  }
+
+  .ubicacionClub {
+    flex-direction: column-reverse;
+    margin: 12%;
+  }
+}
