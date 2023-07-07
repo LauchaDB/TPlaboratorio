@@ -1,0 +1,47 @@
+[
+    {
+        "imgs":["/images/piletaclim.jpg", 
+                "/images/piletaclim1.jpg",
+                "/images/piletaclim2.jpg",
+                "/images/piletaclim3.jpg",
+                "/images/piletaclim4.jpg",
+                "/images/piletaclim5.jpg"],
+        "title": "Proyecto pileta climatizada",
+        "description": "¡Tenemos una emocionante noticia! Hemos creado una pileta climatizada junto a nuestra piscina principal. Ahora podrás disfrutar de la natación durante todo el año, sin importar el clima exterior. Esta nueva adición brinda comodidad, beneficios para la salud y un espacio acogedor para relajarse y divertirse en el agua. Estamos emocionados de compartir esta experiencia mejorada con nuestra comunidad en el Club Juventud Unida de Humboldt."
+    },
+    {
+        "imgs":["/images/riego3.jpg",
+                "/images/riego1.jpg",
+                "/images/riego2.jpg",
+                "/images/riego4.jpg"],
+        "title": "Proyecto riego artificial",
+        "description": "¡Gran noticia! Hemos instalado un sistema de riego artificial en nuestra cancha principal de fútbol. Esto simplificará y modernizará el proceso de riego y mantenimiento, mejorando la calidad del campo de juego. Estamos emocionados por cómo este avance beneficiará a nuestros jugadores y fortalecerá el desarrollo deportivo en nuestra comunidad. ¡Una mejora significativa para nuestro club!"
+    },
+    {
+        "imgs":["/images/final1.jpg",
+                "/images/final2.jpg"],
+        "title": "Final copa federaciones 2021",
+        "description": "En 2017, el Club Atlético Juventud Unida hizo historia al participar por primera vez en la Copa Federaciones, un torneo que reúne a los mejores equipos de cada liga. El rojiblanco llegó hasta la final, aunque lamentablemente no logró coronarse campeón. A pesar de ello, esta destacada actuación fue un gran impulso y logro para el club, inspirando a jugadores y aficionados, y dejando una huella imborrable en la historia del club."
+    },
+    {
+        "imgs":["/images/seleccionado1.jpg",
+                "/images/seleccionado3.jpg"],
+        "title": "Seleccionado 2017",
+        "description": "En 2017, uno de nuestros talentosos jugadores del Club Atlético Juventud Unida fue seleccionado por la Liga Esperancina para participar en una competencia entre ligas vecinas. En este torneo, se eligen a 18 jugadores de los 28 equipos actuales de la liga. Nuestro jugador tuvo un desempeño destacado y junto al equipo lograron llegar a la final, aunque no pudieron alzarse como campeones. Sin embargo, este logro de tener un jugador de nuestras inferiores participando en esta importante competencia llenó de orgullo a todo el club. Fue un momento en el que pudimos demostrar la calidad y el talento que se desarrolla en nuestras filas."
+    },
+    {
+        "imgs":["/images/salon.jpg",
+                "/images/salon2.jpg",
+                "/images/salon3.jpg",
+                "/images/salon4.jpg",
+                "/images/salon5.jpg"],
+        "title": "Ampliacion de salon principal",
+        "description": "El Club Atlético Juventud Unida ha comenzado un emocionante proyecto de ampliación de su salón principal. Este espacio central del club, donde se realizan diversas actividades como fiestas, teatros y bingos, será mejorado para ofrecer una experiencia más completa y atractiva. Esta iniciativa fortalecerá el posicionamiento del club como referente para eventos sociales y culturales en la región. Es un paso importante en su crecimiento y promete brindar un ambiente acogedor y vibrante para sus socios y visitantes."
+    },
+    {
+        "imgs":["/images/tarjeta2.jpg",
+                "/images/tarjeta1.jpg"],
+        "title": "Gran tarjeta unida",
+        "description": "La Mutual del Club Atlético Juventud Unida, mantiene firme su compromiso con el asociado y la búsqueda constante por mejorar los servicios que le presta. Luego de años de gestiones legales y administrativas logramos obtener la habilitación para emitir una tarjeta de crédito propia. El 2 de diciembre de 2013 se realizó el lanzamiento de UNIDA, nuestra Tarjeta en la localidad de Franck, estableciéndose como Casa Central del Sistema de Tarjeta. Una vez logrado el óptimo funcionamiento en Franck, a mediados de ese mismo mes comenzó a funcionar en la localidad de Humboldt. En ambos lugares fue bien recibida tanto por asociados como por la comunidad en general, siendo una herramienta que nos permitió incrementar nuestra masa societaria."
+    }
+]

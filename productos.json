@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Camiseta principal futbol",
+        "precio": 10000,
+        "img": "https://sportline.vtexassets.com/arquivos/ids/963067-1152-2048?v=638158432408370000&width=1152&height=2048&aspect=true"
+    },
+    {
+        "name": "Camiseta alternativa futbol",
+        "precio": 13000,
+        "img": "https://sportline.vtexassets.com/arquivos/ids/1012168-1152-2048?v=638231012108770000&width=1152&height=2048&aspect=true"
+    },
+    {
+        "name": "Pantalon principal futbol",
+        "precio": 8000,
+        "img": "https://sportline.vtexassets.com/arquivos/ids/774787-1152-2048?v=638066320108100000&width=1152&height=2048&aspect=true"
+    },
+    {
+        "name": "Pantalon alternativo futbol",
+        "precio": 10000,
+        "img": "https://sportline.vtexassets.com/arquivos/ids/958300-1152-2048?v=638148062192000000&width=1152&height=2048&aspect=true"
+    },
+    {
+        "name": "Pelota roja",
+        "precio": 9000,
+        "img": "https://sportline.vtexassets.com/arquivos/ids/799579-1152-2048?v=638066971561430000&width=1152&height=2048&aspect=true"
+    },
+    {
+        "name": "Conjunto rompe viento",
+        "precio": 55000,
+        "img": "https://sportline.vtexassets.com/arquivos/ids/1012940-1152-2048?v=638232728141130000&width=1152&height=2048&aspect=true"
+    }
+]

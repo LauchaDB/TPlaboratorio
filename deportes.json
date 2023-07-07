@@ -1,0 +1,38 @@
+[
+    {
+        "imgs":["/images/futbol1.jpg",
+                "/images/futbol2.jpg",
+                "/images/futbol3.jpg"],
+        "nombre": "Futbol"
+    },
+    {
+        "imgs":["/images/hockey1.jpg",
+                "/images/hockey2.jpg",
+                "/images/hockey3.jpg"],
+        "nombre": "Hockey"
+    },
+    {
+        "imgs":["/images/natacion1.jpg",
+                "/images/natacion2.jpg",
+                "/images/natacion3.jpg"],
+        "nombre": "Natacion"
+    },
+    {
+        "imgs":["/images/patin3.jpg",
+                "/images/patin2.jpg",
+                "/images/patin1.jpg"],
+        "nombre": "Patín"
+    },
+    {
+        "imgs":["/images/karting1.jpg",
+                "/images/karting2.jpg",
+                "/images/karting3.jpg"],
+        "nombre": "Carreras de karting"
+    },
+    {
+        "imgs":["/images/cordeno1.jpg",
+                "/images/cordeno4.jpg",
+                "/images/cordeno3.jpg"],
+        "nombre": "Fiesta del cordero"
+    }
+]

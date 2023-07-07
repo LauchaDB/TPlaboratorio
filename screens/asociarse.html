@@ -50,13 +50,16 @@
           <li class="nav-item">
             <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tienda.html">Tienda</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- Navbar fin -->
 
-  <h1 class="titleAsociarse animate__animated animate__backInLeft">Asociarse</h1>
+  <h1 class="titleAsociarse titulosDiferentesPaginas">Asociarse</h1>
 
   <section class="contenidoAsociarse">
       <p class="textInfo">¡Descubre los increíbles privilegios de ser socio del club! Disfruta de una 
@@ -110,6 +113,8 @@
         <input type="date" class="form-control" id="nacimiento" onblur="validFechaNac()">
         <label class="errorForm" id="errorFecha" hidden>La fecha de nacimiento no puede ser vacio</label>
         <label class="errorForm" id="errorFechaInvalid" hidden>La fecha de nacimiento no es valido</label>
+        <label class="errorForm" id="errorFechaMayorEdad" hidden>Debe ser mayor de 18 años</label>
+        <label class="errorForm" id="errorFechaImposible" hidden>Imposible estar vivo, MENTIROSO!</label>
       </div>
 
       <div class="mb-3">
@@ -140,8 +145,16 @@
         </div>
         <label class="errorForm" id="errorFoto" hidden>Debe seleccionar un imagen para el carnet</label>
       </div>
+
+      <div class="mb-3">
+        <label for="foto" class="form-label">Suscribirse a noticias por Email (por defecto en NO) </label>
+        <div>
+          <label for="foto" class="form-label">Si </label>
+          <input type="checkbox" name="suscripcion" value="noticiasYes">
+        </div>
+      </div>
   
-      <button class="btn btnSendEmail" onclick="validFormAsociarse(event)">Enviar</button>
+      <button class="btn btnSendEmail" id="enviar" onclick="validFormAsociarse(event)">Enviar</button>
     </form>
   </section>
 
@@ -179,6 +192,7 @@
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   <script src="/functions.js"></script>
+  <script src="animations.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.js"></script>
   </body>
 </html>
